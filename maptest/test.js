@@ -6,8 +6,4 @@ function initialize() {
     mapTypeControlOptions: { mapTypeIds: ['sample', google.maps.MapTypeId.ROADMAP] }/*表示タイプの指定*/
   };
   var map = new google.maps.Map(document.getElementById('map'), myOptions);
-  var styledMapOptions = { name: '株式会社Lig' }
-  var sampleType = new google.maps.StyledMapType(styleOptions, styledMapOptions);
-  map.mapTypes.set('sample', sampleType);
-  map.setMapTypeId('sample');
 }
